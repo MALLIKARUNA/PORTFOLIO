@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Mallikarjun Alyal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #a1a3eb, #bd64ed);
+        }
+
+        /* NAVBAR */
+        .nav-bar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 20px 0;
+            background-color: #031949;
+        }
+
+        .nav-links{
+            display: flex;
+            gap: 40px;
+        }
+
+        .nav-links a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover{
+            color: #38bdf8;
+        }
+
+        .nav-image{
+            position: absolute;
+            right: 60px;
+        }
+
+        .nav-image img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* PROJECT SECTION */
+        #project {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 20px;
+        }
+
+        #title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        article {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        article:hover{
+            transform: translateY(-5px);
+        }
+
+        article h2 {
+            margin-bottom: 10px;
+            color: #031949;
+        }
+
+        article p {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        article ul {
+            margin-left: 20px;
+        }
+
+        article li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav-bar">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="skill.html">Skill</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-image">
+        <img src="photo.jpeg" alt="Mallikarjun Alyal">
+    </div>
+</nav>
+
+<main>
+    <section id="project">
+        <h1 id="title">List of Projects</h1>
+
+        <article>
+            <h2>Portfolio (Coming Soon)</h2>
+            <p>
+                I am currently building a personal portfolio website using HTML, CSS, and JavaScript.
+                It is designed to showcase my skills and projects in a professional way.
+            </p>
+            <ul>
+                <li>Responsive design for mobile, tablet, and desktop</li>
+                <li>About Me, Skills, Projects, and Contact sections</li>
+                <li>Interactive elements using JavaScript</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Login Page</h2>
+            <p>
+                This project is a simple and responsive login page built using HTML and CSS.
+                It focuses on clean design and user-friendly interface.
+            </p>
+            <ul>
+                <li>Responsive form layout</li>
+                <li>Styled input fields and buttons</li>
+                <li>Email and password input structure</li>
+                <li>Clean and minimal UI design</li>
+            </ul>
+        </article>
+
+    </section>
+</main>
+
+</body>
+</html>
