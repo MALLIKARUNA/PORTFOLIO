@@ -1,127 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills | Mallikarjun Alyal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Mallikarjun Alyal</title>
 
-<style>
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body{
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f8fafc;
-}
-
-
-.nav-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 20px 0;
-    background-color: #031949;
-}
-
-.nav-links{
-    display: flex;
-    gap: 40px;
-}
-
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-.nav-links a:hover{
-    color: #38bdf8;
-}
-
-.nav-image{
-    position: absolute;
-    right: 60px;
-}
-
-.nav-image img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8fafc;
+        }
 
 
-#skills{
-    text-align: center;
-    padding: 80px 20px;
-}
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 20px 0;
+            background-color: #031949;
+        }
 
-#skills h1{
-    font-size: 40px;
-    letter-spacing: 10px;
-    color: #38bdf8;
-}
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
 
-#skills ul{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 40px 0;
-}
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
 
-#skills li{
-    background-color: white;
-    color: #333;
-    padding: 20px 25px;
-    border-radius: 25px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0px 0px 20px rgb(70, 113, 142);
-}
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
 
-#skills li:hover{
-    background-color: brown;
-    color: white;
-    transform: scale(1.1);
-}
-</style>
+        .nav-image {
+            position: absolute;
+            right: 60px;
+        }
+
+        .nav-image img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+
+        #skills {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        #skills h1 {
+            font-size: 40px;
+            letter-spacing: 10px;
+            color: #38bdf8;
+        }
+
+        #skills ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            flex-wrap: wrap;
+            padding: 40px 0;
+        }
+
+        #skills li {
+            background-color: white;
+            color: #333;
+            padding: 20px 25px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0px 0px 20px rgb(70, 113, 142);
+        }
+
+        #skills li:hover {
+            background-color: brown;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
 
 
-<nav class="nav-bar">
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="skill.html">Skill</a>
-        <a href="project.html">Project</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="skill.html">Skill</a>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-    <div class="nav-image">
-        <img src="photo.jpeg" alt="Mallikarjun Alyal">
-    </div>
-</nav>
+        <div class="nav-image">
+            <img src="photo.jpeg" alt="Mallikarjun Alyal">
+        </div>
+    </nav>
 
-<section id="skills">
-    <h1>SKILLS</h1>
-    <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-</section>
+    <section id="skills">
+        <h1>SKILLS</h1>
 
+        <ul>
+            <li id="c">C</li>
+            <li id="cpp">C++</li>
+            <li id="java">Java</li>
+            <li id="html">HTML</li>
+            <li id="css">CSS</li>
+            <li id="javascript">JavaScript</li>
+        </ul>
+        <div id="syllabus">
+            syllabus will appear here
+        </div>
+    </section>
+    <script>
+        document.getElementById("c").addEventListener("click", function () {
+            document.getElementById("syllabus").innerHTML = "C Programming Topics <br> Variables <br> Data Types <br> Operators <br> Loops <br> Functions <br> Arrays";
+        })
+        document.getElementById("cpp").addEventListener("click", function () {
+            document.getElementById("syllabus").innerHTML = "C++ Programming Topics <br> Variables <br> Data Types <br> Operators <br> Loops <br> Functions <br> Arrays";
+        })
+        document.getElementById("java").addEventListener("click", function () {
+            document.getElementById("syllabus").innerHTML = "Java Programming Topics <br> Variables <br> Data Types <br> Operators <br> Loops <br> Functions <br> Arrays";
+        })
+        document.getElementById("html").addEventListener("click", function () {
+            document.getElementById("syllabus").innerHTML = "HTML Programming Topics <br> Variables <br> Data Types <br> Operators <br> Loops <br> Functions <br> Arrays";
+        })
+        document.getElementById("css").addEventListener("click", function () {
+            document.getElementById("syllabus").innerHTML = "CSS Programming Topics <br> Variables <br> Data Types <br> Operators <br> Loops <br> Functions <br> Arrays";
+        })
+        document.getElementById("javascript").addEventListener("click", function () {
+            document.getElementById("syllabus").innerHTML = "JavaScript Programming Topics <br> Variables <br> Data Types <br> Operators <br> Loops <br> Functions <br> Arrays";
+        })
+
+    </script>
 </body>
+
 </html>
